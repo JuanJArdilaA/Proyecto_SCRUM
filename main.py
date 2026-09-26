@@ -14,7 +14,7 @@ def guardar_datos(datos):
         json.dump(datos, archivo, indent=4)
 
 def registrar_cliente(datos):
-    pass
+    print("Modulo de inscripciones")
 
 def registrar_servicio(datos):
     pass
