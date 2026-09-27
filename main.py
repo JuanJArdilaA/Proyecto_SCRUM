@@ -23,7 +23,11 @@ def matricular_cliente(datos):
     pass
 
 def generar_reportes(datos):
-    print("Modulo de reportes")
+    print("\n--- MENÚ DE REPORTES ---")
+    print("1. Listar clientes inscritos")
+    print("2. Listar servicios y capacidad")
+    print("3. Listar clientes con riesgo alto")
+    opcion = input("Seleccione un reporte: ")
 
 def main():
     datos = cargar_datos()
