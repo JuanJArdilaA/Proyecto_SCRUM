@@ -23,7 +23,7 @@ def matricular_cliente(datos):
     pass
 
 def generar_reportes(datos):
-    pass
+    print("Modulo de reportes")
 
 def main():
     datos = cargar_datos()
