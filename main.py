@@ -20,6 +20,23 @@ def registrar_cliente(datos):
     apellidos = input("Apellidos: ")
     direccion = input("Direccion: ")
     celular = input("Celular: ")
+    estado = input("Estado (En proceso, Inscrito, Activo, Inactivo): ")
+    riesgo = input("Nivel de riesgo (alto, medio, bajo): ")
+    
+    cliente = {
+        "id": identificacion,
+        "nombres": nombres,
+        "apellidos": apellidos,
+        "direccion": direccion,
+        "celular": celular,
+        "estado": estado,
+        "riesgo": riesgo,
+        "servicios_matriculados": []
+    }
+    datos["clientes"].append(cliente)
+    guardar_datos(datos)
+    print("Cliente registrado con exito.")
+
 
 def registrar_servicio(datos):
     pass
