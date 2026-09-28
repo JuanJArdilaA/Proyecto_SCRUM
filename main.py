@@ -45,7 +45,22 @@ def matricular_cliente(datos):
     pass
 
 def generar_reportes(datos):
-    pass
+    print("\n--- MENU DE REPORTES ---")
+    print("1. Listar clientes inscritos")
+    print("2. Listar servicios y capacidad")
+    print("3. Listar clientes con riesgo alto")
+    opcion = input("Seleccione un reporte: ")
+    
+    if opcion == "1":
+        for c in datos["clientes"]:
+            print(c["id"] + " - " + c["nombres"] + " (" + c["estado"] + ")")
+    elif opcion == "2":
+        for s in datos["servicios"]:
+            print(s["nombre"] + " | Capacidad: " + str(s["capacidad"]) + " | Inscritos: " + str(s["inscritos"]))
+    elif opcion == "3":
+        for c in datos["clientes"]:
+            if c["riesgo"] == "alto":
+                print(c["nombres"] + " " + c["apellidos"] + " - Riesgo Alto")
 
 def main():
     datos = cargar_datos()
