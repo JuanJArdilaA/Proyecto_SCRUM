@@ -14,7 +14,12 @@ def guardar_datos(datos):
         json.dump(datos, archivo, indent=4)
 
 def registrar_cliente(datos):
-    print("Modulo de inscripciones")
+    print("\n--- REGISTRO DE CLIENTE ---")
+    identificacion = input("Numero de identificacion: ")
+    nombres = input("Nombres: ")
+    apellidos = input("Apellidos: ")
+    direccion = input("Direccion: ")
+    celular = input("Celular: ")
 
 def registrar_servicio(datos):
     pass
