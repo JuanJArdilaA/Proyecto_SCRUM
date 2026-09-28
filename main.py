@@ -73,3 +73,28 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def registrar_servicio(datos):
+    print("\n--- REGISTRO DE SERVICIO ---")
+    nombre = input("Nombre del servicio: ")
+    capacidad = int(input("Capacidad maxima de personas: "))
+    servicio = {"nombre": nombre, "capacidad": capacidad, "inscritos": 0}
+    datos["servicios"].append(servicio)
+    guardar_datos(datos)
+    print("Servicio guardado.")
+
+def matricular_cliente(datos):
+    id_cliente = input("ID del cliente a matricular: ")
+    print("Servicios disponibles:")
+    for i in range(len(datos["servicios"])):
+        print(str(i) + ". " + datos["servicios"][i]["nombre"])
+        
+    opcion = int(input("Seleccione el numero de servicio: "))
+    servicio_seleccionado = datos["servicios"][opcion]
+    
+    if servicio_seleccionado["inscritos"] < servicio_seleccionado["capacidad"]:
+        servicio_seleccionado["inscritos"] = servicio_seleccionado["inscritos"] + 1
+        guardar_datos(datos)
+        print("Matricula exitosa.")
+    else:
+        print("No hay cupos disponibles.")
