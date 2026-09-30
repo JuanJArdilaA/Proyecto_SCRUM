@@ -6,7 +6,7 @@ Proyecto desarrollado en Python mediante interfaz de consola (CLI) para gestiona
 
 Toda la planificación del proyecto, incluyendo el planteamiento del problema, los requerimientos funcionales, las historias de usuario y las evidencias de las ceremonias SCRUM y el tablero Kanban, se encuentran consolidadas en el documento oficial de entrega.
 
-* Enlace al documento de sustentación: 
+* Enlace al documento de sustentación: https://docs.google.com/document/d/1gZGwmDjtmU0Z6jCVcYdDnBpldKggyRtE/edit?usp=drive_link&ouid=110375706351756518473&rtpof=true&sd=true 
 
 ## Equipo de Trabajo y Roles SCRUM
 
